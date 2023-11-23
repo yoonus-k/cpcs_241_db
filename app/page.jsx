@@ -3,7 +3,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 
 const TEToast = dynamic(
@@ -26,8 +26,6 @@ const TERipple = dynamic(
 );
 
 export default function Home() {
-  // state to store the data from the api
-  const [data, setData] = useState([]);
   // get the session data
   const { data: session } = useSession();
 

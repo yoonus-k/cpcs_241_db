@@ -14,28 +14,6 @@ export const metadata = {
   title: "Real Estate",
   description: "Real Estate Management",
   keywords: "Real Estate, Real Estate Management",
-  icons: [
-    {
-      href: "/favicon.ico",
-      type: "image/x-icon",
-      sizes: "16x16",
-    },
-    {
-      href: "/favicon.ico",
-      type: "image/x-icon",
-      sizes: "32x32",
-    },
-    {
-      href: "/favicon.ico",
-      type: "image/x-icon",
-      sizes: "48x48",
-    },
-    {
-      href: "/favicon.ico",
-      type: "image/x-icon",
-      sizes: "62x62",
-    },
-  ],
 };
 
 export default function RootLayout({ children }) {
