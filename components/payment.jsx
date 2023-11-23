@@ -1,10 +1,8 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -20,7 +18,6 @@ import {
 import { useState, useEffect } from "react";
 import { useSession } from "next-auth/react";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
 import { useRouter } from "next/navigation";
 
 const TERipple = dynamic(
