@@ -6,6 +6,7 @@ import { Bed, Bath, Grid2X2, MapPin, Car } from "lucide-react";
 import { Badge } from "./ui/badge";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const TERipple = dynamic(
   () => import("tw-elements-react").then((mod) => mod.TERipple),
@@ -43,7 +44,12 @@ const PropertyCard = ({ property, id, rule }) => {
               <h3 className="text-sm text-gray-700 ">{property.location}</h3>
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex flex-row">
+              <Badge className="mr-2">
+                <Link href={`/profile/${property.seller_id}`}>
+                  Contact Seller
+                </Link>
+              </Badge>
               <Badge className="mr-2">
                 <p className="text-sm font-medium  ">
                   {property.property_type}
@@ -142,6 +148,7 @@ const PropertyCard = ({ property, id, rule }) => {
               </TERipple>
             </div>
           )}
+          <p>or</p>
         </div>
       </div>
     </div>
