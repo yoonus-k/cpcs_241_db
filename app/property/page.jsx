@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import PropertyCard from "@components/propertyCard";
 import { useSession } from "next-auth/react";
 
-const Propery = () => {
+const page = () => {
   const [property, setProperty] = useState(null);
 
   const { data: session } = useSession();
@@ -12,7 +12,12 @@ const Propery = () => {
   useEffect(() => {
     // fetch properties from the api based on the id
     const fetchProperties = async () => {
-      const res = await fetch(`/api/property/`);
+      const res = await fetch(`/api/property`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       const data = await res.json();
 
       setProperty(data.rows);
@@ -53,4 +58,4 @@ const Propery = () => {
   );
 };
 
-export default Propery;
+export default page;
