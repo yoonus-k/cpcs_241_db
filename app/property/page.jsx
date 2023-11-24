@@ -35,7 +35,7 @@ const Propery = () => {
               property.map((property) => (
                 <div key={property.property_id}>
                   <>
-                    {property.buyer_id == null ? (
+                    {property.buyer_id === null ? (
                       <div>
                         <PropertyCard
                           id={session?.user?.id}
