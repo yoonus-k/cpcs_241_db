@@ -113,7 +113,6 @@ const PropertyCard = ({ property, id, rule }) => {
                 <button
                   disabled
                   className="pointer-events-none mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
-                  type="submit"
                   style={{
                     background:
                       "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",
@@ -130,25 +129,33 @@ const PropertyCard = ({ property, id, rule }) => {
           ) : (
             <div className="mb-12 pb-1 pt-1 text-center">
               <TERipple rippleColor="light" className="w-full">
-                <button
-                  onClick={handleBuy}
-                  className="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
-                  type="submit"
-                  style={{
-                    background:
-                      "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",
-                  }}
-                >
-                  {property.buyer_id ? (
+                {property.buyer_id ? (
+                  <button
+                    disabled
+                    className="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+                    style={{
+                      background:
+                        "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",
+                    }}
+                  >
                     <p className="mr-2">Sold</p>
-                  ) : (
+                  </button>
+                ) : (
+                  <button
+                    className="mb-3 inline-block w-full rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+                    type="button"
+                    style={{
+                      background:
+                        "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",
+                    }}
+                    onClick={handleBuy}
+                  >
                     <p className="mr-2">{property.price + " SAR "}| Buy</p>
-                  )}
-                </button>
+                  </button>
+                )}
               </TERipple>
             </div>
           )}
-          <p>or</p>
         </div>
       </div>
     </div>

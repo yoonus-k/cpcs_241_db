@@ -29,9 +29,10 @@ export default function App() {
     };
     fetchData();
   }, []);
+
   return (
     <div className="flex flex-col">
-      {show && <Model show={show} property={property} />}
+      {show && <Model setShow={setShow} show={show} property={property} />}
 
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">

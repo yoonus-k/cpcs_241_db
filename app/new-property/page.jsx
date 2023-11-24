@@ -35,7 +35,7 @@ const TESelect = dynamic(
   }
 );
 
-const page = () => {
+const Page = () => {
   //
   const router = useRouter();
   // define all variables here
@@ -312,4 +312,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

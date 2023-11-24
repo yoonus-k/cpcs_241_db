@@ -33,16 +33,18 @@ const Propery = () => {
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {property &&
               property.map((property) => (
-                <>
-                  {property.buyer_id == null ? (
-                    <div key={property.property_id}>
-                      <PropertyCard
-                        id={session?.user?.id}
-                        property={property}
-                      />
-                    </div>
-                  ) : null}
-                </>
+                <div key={property.property_id}>
+                  <>
+                    {property.buyer_id == null ? (
+                      <div>
+                        <PropertyCard
+                          id={session?.user?.id}
+                          property={property}
+                        />
+                      </div>
+                    ) : null}
+                  </>
+                </div>
               ))}
           </div>
         </div>

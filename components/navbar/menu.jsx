@@ -117,20 +117,24 @@ export function Menu({ user_type, user_id }) {
           </DropdownMenuItem>
         </Link>
 
+        {user_type == "seller" && (
+          <Link href={`/new-auction/${user_id}`}>
+            <DropdownMenuItem>
+              <Plus className="mr-2 h-4 w-4" />
+              <span>New Auction</span>
+            </DropdownMenuItem>
+          </Link>
+        )}
+
+        <DropdownMenuSeparator />
+
         <Link href="/property">
           <DropdownMenuItem>
             <Tag className="mr-2 h-4 w-4" />
             <span>For sale</span>
           </DropdownMenuItem>
         </Link>
-
-        <DropdownMenuItem disabled>
-          <Cloud className="mr-2 h-4 w-4" />
-          <span>API</span>
-        </DropdownMenuItem>
-
         <DropdownMenuSeparator />
-
         {/* log out  */}
         <DropdownMenuItem
           onClick={() => {
