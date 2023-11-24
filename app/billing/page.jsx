@@ -22,6 +22,7 @@ export default function App() {
     const fetchData = async () => {
       const response = await fetch("/api/payment", {
         method: "GET",
+        cache: "no-cache",
       });
       const result = await response.json();
       setPayments(result.rows);

@@ -79,7 +79,10 @@ export default function App() {
 
   useEffect(() => {
     // fetch the companies data
-    fetch("/api/company")
+    fetch("/api/company", {
+      method: "GET",
+      cache: "no-cache",
+    })
       .then((res) => res.json())
       .then((data) => {
         // store the value in this format {text: "Google", id: 1, value: 1}

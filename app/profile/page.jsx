@@ -11,7 +11,10 @@ const Profile = () => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const result = await fetch(`/api/users/${session?.user?.id}`);
+      const result = await fetch(`/api/users/${session?.user?.id}`, {
+        method: "GET",
+        cache: "no-cache",
+      });
       const body = await result.json();
       console.log(body);
       setUser(body.rows[0]);

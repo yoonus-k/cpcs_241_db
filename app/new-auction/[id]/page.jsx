@@ -89,7 +89,10 @@ const NewAuction = ({ params }) => {
   useEffect(() => {
     const fetchData = async () => {
       // fetch all the properties
-      const res = await fetch(`/api/property/${params.id}/seller`);
+      const res = await fetch(`/api/property/${params.id}/seller`, {
+        method: "GET",
+        cache: "no-cache",
+      });
       const data = await res.json();
       console.log(data.rows);
       // set the properties

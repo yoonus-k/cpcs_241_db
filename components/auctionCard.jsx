@@ -30,6 +30,7 @@ const AuctionCard = ({ auction, id, user_id }) => {
     const fetchProperties = async () => {
       const res = await fetch(`/api/property/${id}`, {
         method: "GET",
+        cache: "no-cache",
       });
       const data = await res.json();
       setProperty(data.rows[0]);

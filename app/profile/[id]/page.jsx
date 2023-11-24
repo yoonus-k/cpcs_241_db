@@ -9,7 +9,10 @@ const Profile = ({ params }) => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const result = await fetch(`/api/users/${params.id}`);
+      const result = await fetch(`/api/users/${params.id}`, {
+        method: "GET",
+        cache: "no-cache",
+      });
       const body = await result.json();
       console.log(body);
       setUser(body.rows[0]);
