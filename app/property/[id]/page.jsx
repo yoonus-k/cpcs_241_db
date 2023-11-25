@@ -13,8 +13,7 @@ const page = ({ params }) => {
     // fetch properties from the api based on the id
     const fetchProperties = async () => {
       const res = await fetch(`/api/fetchProperty/seller/${params.id}`, {
-        method: "GET",
-        cache: "no-store",
+        method: "POST",
       });
       const data = await res.json();
 

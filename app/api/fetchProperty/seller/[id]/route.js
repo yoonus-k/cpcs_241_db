@@ -1,7 +1,7 @@
 import { sql } from "@vercel/postgres";
 
 // get all sellers
-export async function GET(req, { params }) {
+export async function POST(req, { params }) {
   try {
     const result =
       await sql`select * from property where seller_id = ${params.id};`;

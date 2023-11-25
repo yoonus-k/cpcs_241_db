@@ -1,7 +1,7 @@
 import { sql } from "@vercel/postgres";
 
 // get all sellers
-export async function GET(req) {
+export async function POST(req) {
   try {
     const result = await sql`select * from property ;`;
 
