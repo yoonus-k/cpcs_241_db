@@ -66,6 +66,9 @@ export function Payment({ propertyId }) {
     // set the payment method to the payment method state
     payment.payment_method = paymentMethod;
 
+    // convert the property id to a number
+    payment.property_id = Number(payment.property_id);
+
     console.log(payment);
     // send the payment object to the backend
     try {
@@ -109,7 +112,7 @@ export function Payment({ propertyId }) {
     } catch (error) {
       console.log(error);
     }
-  }, [propertyId]);
+  }, []);
 
   return (
     <section className="h-full  bg-neutral-200 dark:bg-neutral-700">

@@ -71,11 +71,6 @@ export default function App() {
   });
 
   // function to handle the login/register button click
-  const handleLoginRegisterClick = (tab) => {
-    if (loginRegisterActive !== tab) {
-      setloginRegisterActive(tab);
-    }
-  };
 
   useEffect(() => {
     // fetch the companies data

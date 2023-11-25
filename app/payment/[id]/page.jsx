@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import { useEffect, useState } from "react";
 import { Payment } from "@components/payment";
-import { useSearchParams } from "next/navigation";
 
 const page = ({ params }) => {
   // get the property id from the url

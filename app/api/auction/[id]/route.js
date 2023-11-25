@@ -36,10 +36,20 @@ export async function POST(request, { params }) {
       await sql`insert into payment (property_id,amount, payment_method , payment_status) values (${property_id},${highest_bid},'bidding','Pending') returning *`;
 
     // update the property status to sold
-    const result_3 =
-      await sql`update property set buyer_id= ${winning_bid} where property_id=${property_id} returning *`;
+    const result_3 = await sql`UPDATE property
+      SET buyer_id = CASE
+          WHEN EXISTS (SELECT 1 FROM buyer WHERE buyer_id = ${winning_bid}) THEN ${winning_bid}
+          ELSE NULL
+        END,
+        buyer_seller_id = CASE
+          WHEN EXISTS (SELECT 1 FROM seller WHERE seller_id = ${winning_bid}) THEN ${winning_bid}
+          ELSE NULL
+        END
+      WHERE property_id = ${property_id} returning *;`;
 
-    return new Response(JSON.stringify(result, result_2), { status: 200 });
+    return new Response(JSON.stringify(result, result_2, result_3), {
+      status: 200,
+    });
   } catch (error) {
     return new Response(JSON.stringify(error), { status: 500 });
   }

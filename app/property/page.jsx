@@ -41,7 +41,8 @@ const page = () => {
               property.map((property) => (
                 <div key={property.property_id}>
                   <>
-                    {property.buyer_id === null ? (
+                    {property.buyer_id === null &&
+                    property.buyer_seller_id === null ? (
                       <div>
                         <PropertyCard
                           id={session?.user?.id}
