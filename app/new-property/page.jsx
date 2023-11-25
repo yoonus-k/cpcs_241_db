@@ -2,10 +2,11 @@
 
 import React from "react";
 import dynamic from "next/dynamic";
-import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
+
+import { useState, useRef } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { uploadFile, downloadFile } from "@utils/firebasestorage";
 
 // importing dynamic components
 const TEInput = dynamic(
@@ -86,8 +87,7 @@ const Page = () => {
     image: null,
   });
 
-  // state to store the image
-  const [image, setImage] = useState(null);
+  // image ref
   const imageRef = useRef(null);
 
   // handle create property
@@ -102,14 +102,13 @@ const Page = () => {
       // assign the default image
       property.image = "/assets/images/default_home.jpg";
     } else {
-      const response = await fetch(`/api/upload?filename=${file.name}`, {
-        method: "POST",
-        body: file,
-      });
-      const newBlob = await response.json();
-      console.log(newBlob.url);
+      // upload the image to firebase storage
+      const imageRef = await uploadFile(file);
+      // get the image url
+
+      console.log(imageRef);
       // assign the image url to the property
-      property.image = newBlob.url;
+      property.image = imageRef;
     }
 
     // assign the agent id or seller id or buyer id
