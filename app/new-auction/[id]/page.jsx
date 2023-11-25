@@ -91,7 +91,7 @@ const NewAuction = ({ params }) => {
       // fetch all the properties
       const res = await fetch(`/api/property/${params.id}/seller`, {
         method: "GET",
-        cache: "no-cache",
+        cache: "no-store",
       });
       const data = await res.json();
       console.log(data.rows);

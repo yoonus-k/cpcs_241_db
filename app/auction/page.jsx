@@ -14,7 +14,7 @@ const page = () => {
     const fetchAuctions = async () => {
       const res = await fetch(`/api/auction/`, {
         method: "GET",
-        cache: "no-cache",
+        cache: "no-store",
       });
       const data = await res.json();
       setAuctions(data.rows);

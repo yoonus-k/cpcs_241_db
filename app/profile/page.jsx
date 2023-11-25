@@ -13,7 +13,7 @@ const Profile = () => {
     const fetchUser = async () => {
       const result = await fetch(`/api/users/${session?.user?.id}`, {
         method: "GET",
-        cache: "no-cache",
+        cache: "no-store",
       });
       const body = await result.json();
       console.log(body);

@@ -11,7 +11,7 @@ const Profile = ({ params }) => {
     const fetchUser = async () => {
       const result = await fetch(`/api/users/${params.id}`, {
         method: "GET",
-        cache: "no-cache",
+        cache: "no-store",
       });
       const body = await result.json();
       console.log(body);

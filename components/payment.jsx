@@ -96,7 +96,7 @@ export function Payment({ propertyId }) {
       const fetchProperty = async () => {
         const res = await fetch(`/api/property/${propertyId}`, {
           method: "GET",
-          cache: "no-cache",
+          cache: "no-store",
         });
         const data = await res.json();
         setProperty(data.rows[0]);

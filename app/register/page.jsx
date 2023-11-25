@@ -81,7 +81,7 @@ export default function App() {
     // fetch the companies data
     fetch("/api/company", {
       method: "GET",
-      cache: "no-cache",
+      cache: "no-store",
     })
       .then((res) => res.json())
       .then((data) => {
