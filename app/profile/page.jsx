@@ -12,8 +12,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchUser = async () => {
       const result = await fetch(`/api/users/${session?.user?.id}`, {
-        method: "GET",
-        cache: "no-store",
+        method: "POST",
       });
       const body = await result.json();
       console.log(body);

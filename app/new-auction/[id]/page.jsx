@@ -66,8 +66,8 @@ const NewAuction = ({ params }) => {
     auction.highest_bid = auction.starting_bid;
 
     try {
-      // send the property to the server
-      const res = await fetch("/api/auction", {
+      // send the auction to the server
+      const res = await fetch("/api/auction/new", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -80,8 +80,7 @@ export default function App() {
   useEffect(() => {
     // fetch the companies data
     fetch("/api/company", {
-      method: "GET",
-      cache: "no-store",
+      method: "POST",
     })
       .then((res) => res.json())
       .then((data) => {
@@ -161,7 +160,7 @@ export default function App() {
         // if the user does not exist
 
         try {
-          const res = await fetch(`/api/${type}`, {
+          const res = await fetch(`/api/${type}/new`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

@@ -10,8 +10,7 @@ const Profile = ({ params }) => {
   useEffect(() => {
     const fetchUser = async () => {
       const result = await fetch(`/api/users/${params.id}`, {
-        method: "GET",
-        cache: "no-store",
+        method: "POST",
       });
       const body = await result.json();
       console.log(body);

@@ -21,8 +21,7 @@ export default function App() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch("/api/payment", {
-        method: "GET",
-        cache: "no-store",
+        method: "POST",
       });
       const result = await response.json();
       setPayments(result.rows);

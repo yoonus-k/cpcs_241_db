@@ -1,6 +1,6 @@
 // get all users from the database
 import { sql } from "@vercel/postgres";
-export async function GET(request, { params }) {
+export async function POST(request, { params }) {
   try {
     // get the email from the request body
 

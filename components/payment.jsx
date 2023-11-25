@@ -69,7 +69,7 @@ export function Payment({ propertyId }) {
     console.log(payment);
     // send the payment object to the backend
     try {
-      const response = await fetch(`/api/payment`, {
+      const response = await fetch(`/api/payment/new`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -45,7 +45,7 @@ export async function POST(request, { params }) {
   }
 }
 
-// route to get all payments GET
+// route to get all auctions
 export async function GET(request, { params }) {
   try {
     // select all auctions
