@@ -21,11 +21,11 @@ export async function POST(request) {
     // update the property status to sold
     const result2 = await sql`UPDATE property
       SET buyer_id = CASE
-          WHEN EXISTS (SELECT 1 FROM buyer WHERE buyer_id = ${buyer_id}) THEN ${buyer_id}
+          WHEN EXISTS (SELECT buyer_id FROM buyer WHERE buyer_id = ${buyer_id}) THEN ${buyer_id}
           ELSE NULL
         END,
         buyer_seller_id = CASE
-          WHEN EXISTS (SELECT 1 FROM seller WHERE seller_id = ${buyer_id}) THEN ${buyer_id}
+          WHEN EXISTS (SELECT seller_id FROM seller WHERE seller_id = ${buyer_id}) THEN ${buyer_id}
           ELSE NULL
         END
       WHERE property_id = ${property_id} returning *;`;
