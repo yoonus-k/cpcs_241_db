@@ -122,7 +122,7 @@ const Page = () => {
 
     try {
       // send the property to the server
-      const res = await fetch("/api/property/new", {
+      const res = await fetch("/api/fetchProperty/new", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

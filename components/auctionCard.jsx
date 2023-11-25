@@ -28,7 +28,7 @@ const AuctionCard = ({ auction, id, user_id }) => {
   useEffect(() => {
     // fetch properties from the api based on the id
     const fetchProperties = async () => {
-      const res = await fetch(`/api/property/${id}`, {
+      const res = await fetch(`/api/fetchProperty/${id}`, {
         method: "GET",
         cache: "no-store",
       });

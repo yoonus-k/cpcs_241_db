@@ -12,11 +12,8 @@ const page = () => {
   useEffect(() => {
     // fetch properties from the api based on the id
     const fetchProperties = async () => {
-      const res = await fetch(`/api/property`, {
+      const res = await fetch(`/api/fetchProperty`, {
         method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
         cache: "no-store",
       });
       const data = await res.json();
