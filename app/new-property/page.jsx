@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import { useState, useRef } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { uploadFile, downloadFile } from "@utils/firebasestorage";
+import { uploadFile } from "@utils/firebasestorage";
 
 // importing dynamic components
 const TEInput = dynamic(

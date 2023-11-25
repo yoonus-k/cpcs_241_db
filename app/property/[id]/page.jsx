@@ -2,6 +2,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import PropertyCard from "@components/propertyCard";
+// to force dynamic fetching
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 const page = ({ params }) => {
   const [property, setProperty] = useState(null);

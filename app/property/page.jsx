@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import PropertyCard from "@components/propertyCard";
 import { useSession } from "next-auth/react";
 
+// to force dynamic fetching
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
+
 const page = () => {
   const [property, setProperty] = useState(null);
 

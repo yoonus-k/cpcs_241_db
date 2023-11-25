@@ -21,6 +21,10 @@ import { useSession } from "next-auth/react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 
+// to force dynamic fetching
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
+
 const TERipple = dynamic(
   () => import("tw-elements-react").then((mod) => mod.TERipple),
   {

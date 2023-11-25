@@ -2,12 +2,15 @@
 
 import React from "react";
 import dynamic from "next/dynamic";
-import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
-import { useSession } from "next-auth/react";
+
+import { useState, useEffect } from "react";
+
 import { useRouter } from "next/navigation";
 import { DatePicker } from "@components/dataPicker";
-import { tr } from "date-fns/locale";
+
+// to force dynamic fetching
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 // importing dynamic components
 const TEInput = dynamic(

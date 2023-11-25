@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { Plus, CalendarClock, MapPin, MoveUpRight } from "lucide-react";
+import { CalendarClock, MapPin, MoveUpRight } from "lucide-react";
 
 import { Badge } from "./ui/badge";
 import dynamic from "next/dynamic";
@@ -9,6 +9,10 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { DialogDemo } from "@components/dialog";
+
+// to force dynamic fetching
+export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 const TERipple = dynamic(
   () => import("tw-elements-react").then((mod) => mod.TERipple),
