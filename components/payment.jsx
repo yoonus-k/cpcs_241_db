@@ -60,7 +60,7 @@ export function Payment({ propertyId }) {
     // set the payment amount to the property price
     payment.amount = property.price;
     // set the buyer id to the user id form the session
-    payment.buyer_id = session?.user?.id;
+    payment.buyer_id = Number(session?.user?.id);
     // set the payment status to completed
     payment.payment_status = "completed";
     // set the payment method to the payment method state
@@ -82,7 +82,7 @@ export function Payment({ propertyId }) {
       // get the response from the backend
       const data = await response.json();
       // if there is an error, log it
-      if (data.error) {
+      if (response.status !== 200) {
         console.log(data.error);
       }
       // if there is no error, log the data
