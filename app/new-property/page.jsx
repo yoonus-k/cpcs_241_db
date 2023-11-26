@@ -116,8 +116,6 @@ const Page = () => {
       property.agent_id = session.user.id;
     } else if (session.user.source === "seller") {
       property.seller_id = session.user.id;
-    } else if (session.user.source === "buyer") {
-      property.buyer_id = session.user.id;
     }
 
     try {

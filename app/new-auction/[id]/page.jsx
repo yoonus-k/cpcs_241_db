@@ -101,7 +101,11 @@ const NewAuction = ({ params }) => {
 
       // customizing the data
       const properties = data.rows.map((property) => {
-        if (property.buyer_id == null && property.auction_id == null) {
+        if (
+          property.buyer_id == null &&
+          property.buyer_seller_id == null &&
+          property.auction_id == null
+        ) {
           //check if there is an auction for this property
 
           return {
