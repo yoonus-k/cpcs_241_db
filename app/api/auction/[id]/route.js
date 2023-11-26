@@ -37,15 +37,14 @@ export async function POST(request, { params }) {
 
     // update the property status to sold
     const result_3 = await sql`UPDATE property
-      SET buyer_id = CASE
-          WHEN EXISTS (SELECT buyer_id FROM buyer WHERE buyer_id = ${winning_bid}) THEN ${winning_bid}
-          ELSE NULL
-        END,
-        buyer_seller_id = CASE
-          WHEN EXISTS (SELECT seller_id FROM seller WHERE seller_id = ${winning_bid}) THEN ${winning_bid}
-          ELSE NULL
-        END
-      WHERE property_id = ${property_id} returning *;`;
+    SET buyer_id = COALESCE((
+        SELECT buyer_id FROM buyer WHERE buyer_id = ${winning_bid}
+      ), NULL),
+      buyer_seller_id = COALESCE((
+        SELECT seller_id FROM seller WHERE seller_id = ${winning_bid}
+      ), NULL)
+    WHERE property_id = ${property_id}
+    RETURNING *;`;
 
     return new Response(JSON.stringify(result, result_2, result_3), {
       status: 200,
