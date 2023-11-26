@@ -69,7 +69,7 @@ export default function App() {
                         {payment.payment_method}
                       </td>
                       <td className="whitespace-nowrap  px-6 py-4">
-                        {payment.amount}
+                        {payment.amount} SAR
                       </td>
 
                       <td className="whitespace-nowrap  px-6 py-4">

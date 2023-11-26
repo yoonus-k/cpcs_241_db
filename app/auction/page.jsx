@@ -18,6 +18,7 @@ const page = () => {
       });
       const data = await res.json();
       setAuctions(data.rows);
+      console.log(data.rows);
     };
 
     fetchAuctions();
@@ -38,7 +39,8 @@ const page = () => {
               auctions.map(
                 (auction, id) =>
                   // render only the auctions that are not won
-                  auction.buyer_id == null && (
+                  auction.buyer_id == null &&
+                  auction.buyer_seller_id == null && (
                     <AuctionCard
                       key={id}
                       auction={auction}

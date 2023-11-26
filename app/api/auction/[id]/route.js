@@ -18,22 +18,32 @@ export async function POST(request, { params }) {
       highest_bid,
       winning_bid,
     } = await request.json();
+
+    const auction_id = parseInt(params.id);
     console.log(
       property_id,
       starting_bid,
       auction_start_date,
       auction_end_date,
       highest_bid,
-      winning_bid
+      winning_bid,
+      auction_id
     );
 
     // update the auction and put the buyer_id to winning_bid
-    const result =
-      await sql`update auction set buyer_id=${winning_bid} where auction_id=${params.id} returning *`;
+    const result = await sql`UPDATE auction
+    SET buyer_id = COALESCE((
+        SELECT buyer_id FROM buyer WHERE buyer_id = ${winning_bid}
+      ), NULL),
+      buyer_seller_id = COALESCE((
+        SELECT seller_id FROM seller WHERE seller_id = ${winning_bid}
+      ), NULL)
+    WHERE auction_id = ${auction_id}
+    RETURNING *;`;
 
     // make new payment
     const result_2 =
-      await sql`insert into payment (property_id,amount, payment_method , payment_status) values (${property_id},${highest_bid},'bidding','Pending') returning *`;
+      await sql`insert into payment (property_id,amount, payment_method , payment_status) values (${property_id},${highest_bid},'bidding','Pending') returning *;`;
 
     // update the property status to sold
     const result_3 = await sql`UPDATE property

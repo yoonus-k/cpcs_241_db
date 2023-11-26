@@ -37,6 +37,7 @@ const AuctionCard = ({ auction, id, user_id }) => {
       });
       const data = await res.json();
       setProperty(data.rows[0]);
+      console.log(data.rows[0]);
     };
 
     fetchProperties();
@@ -46,6 +47,7 @@ const AuctionCard = ({ auction, id, user_id }) => {
   const handleCloseBid = async (e) => {
     //
     e.preventDefault();
+    auction.winning_bid = parseInt(auction.winning_bid);
 
     // send the data to the api
     const res = await fetch(`/api/auction/${auction.auction_id}`, {
