@@ -111,7 +111,8 @@ npm install
 
 ## Usage
 
-For Sellers:
+<h4>For Sellers:</h4>
+
  1- Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
 
 2- List Your Property: Create a listing for your property by providing accurate and detailed information. Include attractive images, a compelling description, and essential details such as price, location, size, and amenities.
@@ -121,7 +122,7 @@ For Sellers:
 4- Start new auctions on your property : 
 
 
-For Buyers:
+<h4>For Buyers:</h4>
 1- Create a Buyer Account: Sign up on our platform as a buyer. Provide the required details and set up your profile.
 
 2- Search for Properties: Use search and filtering options to find properties that meet your requirements. Narrow down the listings based on location, price range, property type, and desired amenities.
