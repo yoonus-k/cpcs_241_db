@@ -145,9 +145,3 @@ Distributed under the MIT License. See [LICENSE](https://github.com/yoonus-k/cpc
 
 * **yoonus-k** - *KAU, FCIT Student* - [yoonus-k](https://github.com/yoonus-k) - **
 
-## Acknowledgements
-
-* [ShaanCoding](https://github.com/ShaanCoding/)
-* [](Best-README-Template)
-* []()
-
