@@ -37,7 +37,6 @@
 
 ## About The Project
 
-![Screen Shot](public\assets\images\screen_shots.png)
 <img src="public\assets\images\screen_shots.png" alt="DB" className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
 
 The project is an innovative and comprehensive real estate management system designed to revolutionize the way properties are bought, sold, and rented.
