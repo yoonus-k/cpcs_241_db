@@ -1,7 +1,8 @@
-
 <br/>
 <p align="center">
+
    <img
+
                 src="app\favicon.ico"
                 alt={property.location}
                 className="h-full w-full object-cover object-center lg:h-full lg:w-full"
@@ -24,56 +25,52 @@
   </p>
 </p>
 
-![License](https://img.shields.io/github/license/yoonus-k/cpcs_241_db) 
+![License](https://img.shields.io/github/license/yoonus-k/cpcs_241_db)
 
 ## Table Of Contents
 
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
+- [About the Project](#about-the-project)
+- [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](public\assets\images\screen_shots.png)
 
-The project is an innovative and comprehensive real estate management system designed to revolutionize the way properties are bought, sold, and rented. 
+The project is an innovative and comprehensive real estate management system designed to revolutionize the way properties are bought, sold, and rented.
 
 Key Features:
 
-* Property Listings: Browse through an extensive database of properties with detailed information, including images, descriptions, location and price.
+- Property Listings: Browse through an extensive database of properties with detailed information, including images, descriptions, location and price.
 
-* Auction system: Our platform enables bidders to participate in auctions from anywhere, eliminating geographical limitations and allowing a larger pool of participants to engage in the bidding process.
+- Auction system: Our platform enables bidders to participate in auctions from anywhere, eliminating geographical limitations and allowing a larger pool of participants to engage in the bidding process.
 
-* Secure Transactions: Facilitate secure financial transactions and document signing directly within the platform, ensuring a smooth and reliable process.
+- Secure Transactions: Facilitate secure financial transactions and document signing directly within the platform, ensuring a smooth and reliable process.
 
 By leveraging the power of technology and data-driven insights, our real estate management system aims to empower users, simplify processes, and enhance transparency in the real estate market. Experience a new era of convenience, efficiency, and confidence in your real estate endeavors with our transformative platform.
 
 ## Built With
 
-This project is built with the help of these technologies : 
+This project is built with the help of these technologies :
 
-* [Framework : Next.js]()
-* [Database : Postgres]()
-* [DDL & DML : SQL]()
-* [Image bucket : FireBase Cloud]()
-* []()
+- [Framework : Next.js]()
+- [Database : Postgres]()
+- [DDL & DML : SQL]()
+- [Image bucket : FireBase Cloud]()
 
 ## Getting Started
 
 Please make sure you have installed node.js and javascript SDK on your system.
 
-
 ### Prerequisites
 
-
-* npm
+- npm
 
 ```sh
 npm install npm@latest -g
@@ -95,19 +92,17 @@ git clone https://github.com/yoonus-k/cpcs_241_db.git
 npm install
 ```
 
-
 ## Usage
 
 <h4>For Sellers:</h4>
 
- 1- Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
+1- Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
 
 2- List Your Property: Create a listing for your property by providing accurate and detailed information. Include attractive images, a compelling description, and essential details such as price, location, size, and amenities.
 
 3- Set a Competitive Price.
 
-4- Start new auctions on your property : 
-
+4- Start new auctions on your property.
 
 <h4>For Buyers:</h4>
 1- Create a Buyer Account: Sign up on our platform as a buyer. Provide the required details and set up your profile.
@@ -120,16 +115,16 @@ npm install
 
 5- Negotiate and Finalize the Deal: Buy the property and make payment.
 
-
 By following these usage guidelines, sellers can effectively list and sell their properties.
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/yoonus-k/cpcs_241_db/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
-* Please make sure you check your spelling and grammar.
-* Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/yoonus-k/cpcs_241_db/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/yoonus-k/cpcs_241_db/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
+- Please make sure you check your spelling and grammar.
+- Create individual PR for each suggestion.
+- Please also read through the [Code Of Conduct](https://github.com/yoonus-k/cpcs_241_db/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Creating A Pull Request
 
@@ -141,9 +136,8 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/yoonus-k/cpcs_241_db/blob/main/LICENSE.md) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/yoonus-k/cpcs_241_db/blob/main/LICENSE) for more information.
 
 ## Authors
 
-* **yoonus-k** - *KAU, FCIT Student* - [yoonus-k](https://github.com/yoonus-k) - **
-
+- **[yoonus-k](https://github.com/yoonus-k)** , _KAU, FCIT Student_ ,
