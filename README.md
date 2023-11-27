@@ -14,7 +14,7 @@
     <a href="https://github.com/yoonus-k/cpcs_241_db"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/yoonus-k/cpcs_241_db">View Demo</a>
+    <a href="https://cpcs-241-db.vercel.app">View Demo</a>
     .
     <a href="https://github.com/yoonus-k/cpcs_241_db/issues">Report Bug</a>
     .
