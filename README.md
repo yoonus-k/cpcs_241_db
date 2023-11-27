@@ -93,26 +93,26 @@ npm install
 
 ## Usage
 
-###<h4>For Sellers:</h4>
+### For Sellers:
 
-1- Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
+1. Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
 
-2- List Your Property: Create a listing for your property by providing accurate and detailed information. Include attractive images, a compelling description, and essential details such as price, location, size, and amenities.
+2. List Your Property: Create a listing for your property by providing accurate and detailed information. Include attractive images, a compelling description, and essential details such as price, location, size, and amenities.
 
-3- Set a Competitive Price.
+3. Set a Competitive Price.
 
-4- Start new auctions on your property.
+4. Start new auctions on your property.
 
-###<h4>For Buyers:</h4>
-1- Create a Buyer Account: Sign up on our platform as a buyer. Provide the required details and set up your profile.
+### For Buyers:
+1. Create a Buyer Account: Sign up on our platform as a buyer. Provide the required details and set up your profile.
 
-2- Search for Properties: Use search and filtering options to find properties that meet your requirements. Narrow down the listings based on location, price range, property type, and desired amenities.
+2. Search for Properties: Use search and filtering options to find properties that meet your requirements. Narrow down the listings based on location, price range, property type, and desired amenities.
 
-3- View the hottest auction in the market and make new biddings.
+3. View the hottest auction in the market and make new biddings.
 
-3- Review Property Details: Click on a property listing to access detailed information, including images, descriptions, floor plans, and any additional documentation. Evaluate the property's suitability, consider its features, and review the seller's terms and conditions.
+4. Review Property Details: Click on a property listing to access detailed information, including images, descriptions, floor plans, and any additional documentation. Evaluate the property's suitability, consider its features, and review the seller's terms and conditions.
 
-5- Negotiate and Finalize the Deal: Buy the property and make payment.
+5. Negotiate and Finalize the Deal: Buy the property and make payment.
 
 By following these usage guidelines, sellers can effectively list and sell their properties.
 
