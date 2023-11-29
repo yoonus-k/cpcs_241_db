@@ -15,7 +15,8 @@ const Profile = () => {
         method: "POST",
       });
       const body = await result.json();
-      console.log(body);
+      console.log(body.rows[0]);
+      console.log(body.command);
       setUser(body.rows[0]);
     };
     if (session?.user?.id) {
@@ -24,7 +25,10 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="flex items-center h-screen w-full justify-center">
+    <div className="flex items-center flex-col h-screen w-full justify-center">
+      <h2 className="p-4 text-center text-2xl font-bold tracking-tight text-gray-900">
+        Your Profile
+      </h2>
       <div className="min-w-max w-5/6 lg:w-1/2">
         <div className="bg-white shadow-xl rounded-lg py-3">
           <div className="photo-wrapper p-2 flex justify-center ">

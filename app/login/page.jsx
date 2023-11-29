@@ -155,13 +155,14 @@ export default function Login() {
                 >
                   <div className="px-4 py-6 text-white md:mx-6 md:p-12">
                     <h4 className="mb-6 text-xl font-semibold">
-                      We are more than just a company
+                      We are more than just a Students
                     </h4>
                     <p className="text-sm">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      This project is a part of the Database course at King
+                      Abdul-aziz University. It is a real estate website that
+                      allows users to buy and sell properties. It also allows
+                      users to auction their properties. please contact us if
+                      you found any bugs.
                     </p>
                   </div>
                 </div>

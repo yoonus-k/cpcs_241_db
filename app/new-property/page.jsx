@@ -128,10 +128,14 @@ const Page = () => {
         body: JSON.stringify(property),
       });
 
+      const data = await res.json();
+
       // check if the response is ok
       if (!res.ok) {
         throw new Error(res);
       } else {
+        console.log(data.command);
+        console.log(data.rows[0]);
         alert("Property added successfully");
         // redirect to the home page
         router.push("/");
@@ -149,6 +153,9 @@ const Page = () => {
         <div className="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
           <div className="w-full">
             <div className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
+              <h2 className="p-4 text-center text-2xl font-bold tracking-tight text-gray-900">
+                Add New Property
+              </h2>
               <div className="g-0 flex justify-around ">
                 <div className="px-4 md:px-0 lg:w-6/12">
                   <div

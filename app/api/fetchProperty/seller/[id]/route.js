@@ -6,6 +6,8 @@ export async function POST(req, { params }) {
     const result =
       await sql`select * from property where seller_id = ${params.id};`;
 
+    result.command = `select * from property where seller_id = ${params.id};`;
+
     return new Response(JSON.stringify(result), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify(error), { status: 500 });

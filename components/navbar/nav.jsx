@@ -29,7 +29,7 @@ const Nav = () => {
               className="mx-2 my-1 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 lg:mb-0 lg:mt-0"
               href="/"
             >
-              <Database className="text-red-500" />
+              <Database className="text-rose-500" />
             </a>
           </div>
           {/* Hamburger button for mobile view */}
@@ -41,8 +41,14 @@ const Nav = () => {
               data-te-ripple-init
               data-te-ripple-color="light"
               className="mr-3 inline-block rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-100 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 motion-reduce:transition-none"
+              style={{
+                background:
+                  "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",
+              }}
             >
-              <Link href="/login">Login</Link>
+              <Link className="text-zinc-50" href="/login">
+                Login
+              </Link>
             </button>
           )}
 

@@ -6,7 +6,13 @@ const Footer = () => {
     <div>
       {/*Footer container*/}
       <footer className="flex flex-col items-center bg-neutral-900 text-center text-white">
-        <div className="container px-6 pt-6">
+        <div
+          className="px-6 pt-6 mb-3  w-full  pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_rgba(0,0,0,0.2)] transition duration-150 ease-in-out hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)] focus:outline-none focus:ring-0 active:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.1),0_4px_18px_0_rgba(0,0,0,0.2)]"
+          style={{
+            background:
+              "linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)",
+          }}
+        >
           <div className="mb-6 flex justify-center">
             <a
               href="https://github.com/yoonus-k"

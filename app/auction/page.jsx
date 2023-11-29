@@ -19,6 +19,7 @@ const page = () => {
       const data = await res.json();
       setAuctions(data.rows);
       console.log(data.rows);
+      console.log(data.command);
     };
 
     fetchAuctions();

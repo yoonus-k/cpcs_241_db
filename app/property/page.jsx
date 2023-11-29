@@ -22,7 +22,8 @@ const page = () => {
       const data = await res.json();
 
       setProperty(data.rows);
-      console.log(data);
+      console.log(data.command);
+      console.log(data.rows);
     };
 
     fetchProperties();

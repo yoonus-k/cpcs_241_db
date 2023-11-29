@@ -26,6 +26,7 @@ export default function App() {
       const result = await response.json();
       setPayments(result.rows);
       console.log(result.rows);
+      console.log(result.command);
     };
     fetchData();
   }, []);
@@ -35,7 +36,10 @@ export default function App() {
       {show && <Model setShow={setShow} show={show} property={property} />}
 
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-        <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+        <h2 className="p-4 text-center  text-2xl font-bold tracking-tight text-gray-900">
+          Bills
+        </h2>
+        <div className="inline-block min-w-full py-2 px-0.5 sm:px-6 lg:px-8">
           <div className="overflow-hidden">
             <table className="min-w-full text-center text-sm font-light">
               <thead className="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">

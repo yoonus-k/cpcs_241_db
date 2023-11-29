@@ -5,6 +5,8 @@ export async function GET(request) {
   try {
     // select all auctions
     const result = await sql`select * from auction`;
+
+    result.command = `select * from auction`;
     return new Response(JSON.stringify(result), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify(error), { status: 500 });
@@ -19,6 +21,8 @@ export async function PATCH(request) {
     // make new payment
     const result =
       await sql`update auction set winning_bid=${winning_bid},highest_bid=${highest_bid} where property_id=${property_id} returning *`;
+
+    result.command = `update auction set winning_bid=${winning_bid},highest_bid=${highest_bid} where property_id=${property_id} returning *`;
 
     return new Response(JSON.stringify(result), { status: 200 });
   } catch (error) {

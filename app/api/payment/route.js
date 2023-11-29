@@ -8,6 +8,12 @@ export async function POST(request) {
     INNER JOIN property pr ON p.property_id = pr.property_id
     LEFT JOIN buyer b ON pr.buyer_id = b.buyer_id
     LEFT JOIN seller s ON pr.buyer_seller_id = s.seller_id;`;
+
+    result.command = `SELECT *
+    FROM payment p
+    INNER JOIN property pr ON p.property_id = pr.property_id
+    LEFT JOIN buyer b ON pr.buyer_id = b.buyer_id
+    LEFT JOIN seller s ON pr.buyer_seller_id = s.seller_id;`;
     return new Response(JSON.stringify(result), { status: 200 });
   } catch (error) {
     return new Response(JSON.stringify(error), { status: 500 });

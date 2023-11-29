@@ -13,6 +13,12 @@ export async function POST(request, { params }) {
     ;`;
     console.log("from users[id] api route:");
     console.log(result);
+    result.command = `select seller_id,seller_name,email, phone,'seller' as source from seller where seller_id = ${params.id} 
+    UNION ALL
+    select buyer_id,buyer_name,email,phone,'buyer' as source from buyer where buyer_id = ${params.id}
+    UNION ALL
+    select agent_id,agent_name,email,phone,'agent' as source from agent where agent_id = ${params.id}
+    ;`;
 
     // check if the user exists in the database
     if (result.rows.length > 0) {

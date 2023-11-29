@@ -96,7 +96,9 @@ const NewAuction = ({ params }) => {
         method: "POST",
       });
       const data = await res.json();
+      console.log(data.command);
       console.log(data.rows);
+
       // set the properties
 
       // customizing the data
@@ -122,8 +124,6 @@ const NewAuction = ({ params }) => {
         }
       });
 
-      console.log(properties);
-
       setProperty(properties);
     };
 
@@ -138,10 +138,10 @@ const NewAuction = ({ params }) => {
             <div className="block rounded-lg bg-white shadow-lg dark:bg-neutral-800">
               <div className="g-0 flex justify-around ">
                 <div className="px-4 md:px-0 lg:w-6/12">
-                  <div
-                    defaultValue="buyer"
-                    className="w-full p-10  text-center"
-                  >
+                  <h2 className="p-3 text-center text-2xl font-bold tracking-tight text-gray-900">
+                    Start New Auction
+                  </h2>
+                  <div defaultValue="buyer" className="w-full p-6  text-center">
                     <form
                       onSubmit={(e) => {
                         console.log(auction);
