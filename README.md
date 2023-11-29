@@ -1,26 +1,8 @@
 <br/>
 <p align="center">
-<<<<<<< HEAD
-  <span className="[&>svg]:w-7">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="h-7 w-7"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                clipRule="evenodd"
-=======
 
-   <img
 
-                src="app\favicon.ico"
-                alt={property.location}
-                className="h-full w-full object-cover object-center lg:h-full lg:w-full"
->>>>>>> cdcfe43f51f645a10e6704cd399c1cef39a920f7
-              />
+   <img src="app\favicon.ico" alt="DB" className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
 
   <h3 align="center">CPCS-241 Real Estate DB System</h3>
 
@@ -55,7 +37,7 @@
 
 ## About The Project
 
-![Screen Shot](public\assets\images\screen_shots.png)
+<img src="public\assets\images\screen_shots.png" alt="DB" className="h-full w-full object-cover object-center lg:h-full lg:w-full"/>
 
 The project is an innovative and comprehensive real estate management system designed to revolutionize the way properties are bought, sold, and rented.
 
@@ -72,6 +54,9 @@ By leveraging the power of technology and data-driven insights, our real estate 
 ## Built With
 
 This project is built with the help of these technologies :
+<h3 align="left">Languages and Tools:</h3>
+ <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>
+
 
 - [Framework : Next.js]()
 - [Database : Postgres]()
@@ -108,26 +93,26 @@ npm install
 
 ## Usage
 
-<h4>For Sellers:</h4>
+### For Sellers:
 
-1- Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
+1. Create a Seller Account: Sign up on our platform as a seller. Provide the required information and set up your profile.
 
-2- List Your Property: Create a listing for your property by providing accurate and detailed information. Include attractive images, a compelling description, and essential details such as price, location, size, and amenities.
+2. List Your Property: Create a listing for your property by providing accurate and detailed information. Include attractive images, a compelling description, and essential details such as price, location, size, and amenities.
 
-3- Set a Competitive Price.
+3. Set a Competitive Price.
 
-4- Start new auctions on your property.
+4. Start new auctions on your property.
 
-<h4>For Buyers:</h4>
-1- Create a Buyer Account: Sign up on our platform as a buyer. Provide the required details and set up your profile.
+### For Buyers:
+1. Create a Buyer Account: Sign up on our platform as a buyer. Provide the required details and set up your profile.
 
-2- Search for Properties: Use search and filtering options to find properties that meet your requirements. Narrow down the listings based on location, price range, property type, and desired amenities.
+2. Search for Properties: Use search and filtering options to find properties that meet your requirements. Narrow down the listings based on location, price range, property type, and desired amenities.
 
-3- View the hottest auction in the market and make new biddings.
+3. View the hottest auction in the market and make new biddings.
 
-3- Review Property Details: Click on a property listing to access detailed information, including images, descriptions, floor plans, and any additional documentation. Evaluate the property's suitability, consider its features, and review the seller's terms and conditions.
+4. Review Property Details: Click on a property listing to access detailed information, including images, descriptions, floor plans, and any additional documentation. Evaluate the property's suitability, consider its features, and review the seller's terms and conditions.
 
-5- Negotiate and Finalize the Deal: Buy the property and make payment.
+5. Negotiate and Finalize the Deal: Buy the property and make payment.
 
 By following these usage guidelines, sellers can effectively list and sell their properties.
 
