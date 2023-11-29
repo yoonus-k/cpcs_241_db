@@ -45,6 +45,11 @@ const AuctionCard = ({ auction, id, user_id }) => {
 
   // function to close the bid
   const handleCloseBid = async (e) => {
+    // check if there is no bid
+    if (auction.winning_bid == null) {
+      alert("No bid so far");
+      return;
+    }
     //
     e.preventDefault();
     auction.winning_bid = parseInt(auction.winning_bid);
